@@ -1,0 +1,25 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: Lambda NodeJS starter project
+Parameters:
+LambdaName:
+  Description: "HelloWorld Lambda"
+  Type: "String"
+LambdaDescription:
+  Description: "This is a HelloWorld Lambda created for the TPE of Redes Q1 2022"
+  Type: "String"
+LambdaRole:
+  Description: "lambda-role"
+  Type: "String"
+Resources:
+  LambdaInstagramWrapper:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      Role: !Ref LambdaRole
+      FunctionName: !Ref LambdaName
+      MemorySize: 256
+      Timeout: 60
+      Handler: index.handler
+      Runtime: nodejs16.x
+      CodeUri: .
+      Description: !Ref LambdaDescription

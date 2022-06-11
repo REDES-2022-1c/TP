@@ -1,0 +1,9 @@
+{
+  "name": "redes-tpe-lambda",
+  "version": "1.0.0",
+  "description": "Simple lambda to be deploy by CodePipeline and build by CodeBuild on AWS",
+  "main": "index.js",
+  "repository": "https://github.com/nacho9900/redes-tpe-lambda.git",
+  "author": "Nacho <nachonegrocaino@gmail.com>",
+  "license": "MIT"
+}

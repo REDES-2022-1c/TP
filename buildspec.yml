@@ -1,0 +1,10 @@
+version: 0.1
+phases:
+  install:
+    commands:
+      - yarn install
+      - aws cloudformation package --template-file template.yml --s3-bucket $BUCKET_NAME --output-template-file output-template.yml
+artifacts:
+  type: zip
+  files:
+    - '**/*'
