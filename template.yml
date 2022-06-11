@@ -19,7 +19,7 @@ Resources:
       FunctionName: !Ref LambdaName
       MemorySize: 256
       Timeout: 60
-      Handler: index.handler
+      Handler: dist/index.handler
       Runtime: nodejs16.x
       CodeUri: .
       Description: !Ref LambdaDescription
