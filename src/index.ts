@@ -1,5 +1,5 @@
 export const lambdaHandler = () => {
-    console.log('HelloWorld');
+    console.log('HelloWorld v1.1');
     return 'Hello World!';
 }
 
