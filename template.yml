@@ -12,7 +12,7 @@ Parameters:
     Description: "lambda-role"
     Type: "String"
 Resources:
-  RedesLambda:
+  HelloWorldLambda:
     Type: 'AWS::Serverless::Function'
     Properties:
       Role: !Ref LambdaRole
