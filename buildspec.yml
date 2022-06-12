@@ -3,6 +3,9 @@ phases:
   install:
     commands:
       - yarn install
+  build:
+    commands:
+      - yarn test
       - yarn build
       - aws cloudformation package --template-file template.yml --s3-bucket $BUCKET_NAME --output-template-file output-template.yml
 artifacts:
